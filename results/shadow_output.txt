@@ -1,0 +1,5 @@
+Paired requests: 200
+Mean absolute prediction difference: 9.4845 min
+Difference > 10 min: 70/200 (35.0%)
+prod (v1, port 5101) HTTP p95: 2.896 ms
+candidate (v2, port 5102) HTTP p95: 3.009 ms

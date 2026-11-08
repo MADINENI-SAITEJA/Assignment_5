@@ -1,0 +1,7 @@
+Ray CPU resources: 2
+PASS (a) Candidate share: 192/1000 (19.2%) at weight 20%
+PASS (b) 200/200 repeat requests kept their original arm
+PASS (c) 200/200 customers kept their arm after an identical redeploy
+PASS (d) All 192 original v2 customers stayed on v2; 488/1000 customers now go to v2
+PASS (e) 50/50 v1 customers forced to v2, then returned to v1 without the header
+[33m(raylet)[0m Task ServeController.graceful_shutdown failed. There are infinite retries remaining, so the task will be retried. Error: The actor is dead because it was killed by `ray.kill`.

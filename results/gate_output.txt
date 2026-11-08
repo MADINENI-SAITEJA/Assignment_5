@@ -1,0 +1,45 @@
+Default thresholds
+{
+  "prod": {
+    "mae": 11.9553,
+    "mae_rush": 19.679859894921194,
+    "mae_rain": 11.622736418511066,
+    "p95_ms": 0.9259933511202687
+  },
+  "candidate": {
+    "mae": 6.104850000000001,
+    "mae_rush": 8.579509632224168,
+    "mae_rain": 6.285311871227364,
+    "p95_ms": 0.9135935493759461
+  },
+  "criteria": {
+    "mae": true,
+    "p95_ms": true,
+    "mae_rush": true,
+    "mae_rain": true
+  },
+  "promote": true
+}
+
+Stricter threshold: minimum overall MAE gain = 60%
+{
+  "prod": {
+    "mae": 11.9553,
+    "mae_rush": 19.679859894921194,
+    "mae_rain": 11.622736418511066,
+    "p95_ms": 0.9443917982935089
+  },
+  "candidate": {
+    "mae": 6.104850000000001,
+    "mae_rush": 8.579509632224168,
+    "mae_rain": 6.285311871227364,
+    "p95_ms": 0.9150562473223544
+  },
+  "criteria": {
+    "mae": false,
+    "p95_ms": true,
+    "mae_rush": true,
+    "mae_rain": true
+  },
+  "promote": false
+}
